@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>École Horizon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+    }
+    .programmes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .programme {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenue à l'École LevelUp</h1>
+    <p>Un avenir brillant commence ici</p>
+  </header>
+
+  <nav>
+    <a href="#programmes">Nos Programmes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="programmes">
+    <h2>📚 Nos Programmes</h2>
+    <div class="programmes">
+      <div class="programme">
+        <h3>Informatique</h3>
+        <p>Initiation à la programmation, algorithmique, bureautique et sécurité numérique.</p>
+      </div>
+      <div class="programme">
+        <h3>Français</h3>
+        <p>Maîtrise de la langue, littérature francophone, expression écrite et orale.</p>
+      </div>
+      <div class="programme">
+        <h3>Mathématiques</h3>
+        <p>Calcul, géométrie, algèbre, statistiques et logique mathématique.</p>
+      </div>
+      <div class="programme">
+        <h3>Anglais</h3>
+        <p>Grammaire, vocabulaire, conversation, compréhension écrite et orale.</p>
+      </div>
+      <div class="programme">
+        <h3>Autres</h3>
+        <p>Sciences, histoire-géographie, art, sport et développement personnel.</p>
+      </div>
+    </div>
+  </section>
+<section id="inscription">
+  <h2>📝 Formulaire d'inscription</h2>
+  <form action="#" method="post" style="max-width: 600px; margin: auto;">
+    <label for="nom">Nom :</label><br>
+    <input type="text" id="nom" name="nom" required><br><br>
+
+    <label for="prenom">Prénom :</label><br>
+    <input type="text" id="prenom" name="prenom" required><br><br>
+
+    <label for="naissance">Date de naissance :</label><br>
+    <input type="date" id="naissance" name="naissance" required><br><br>
+
+    <label for="adresse">Adresse :</label><br>
+    <input type="text" id="adresse" name="adresse" required><br><br>
+
+    <label for="telephone">Téléphone :</label><br>
+    <input type="tel" id="telephone" name="telephone" required><br><br>
+
+    <label for="email">Email :</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="etat">État de l'élève :</label><br>
+    <select id="etat" name="etat">
+      <option value="nouveau">Nouveau</option>
+      <option value="ancien">Ancien</option>
+      <option value="redoublant">Redoublant</option>
+    </select><br><br>
+
+    <label for="pere">Nom du père :</label><br>
+    <input type="text" id="pere" name="pere"><br><br>
+
+    <label for="mere">Nom de la mère :</label><br>
+    <input type="text" id="mere" name="mere"><br><br>
+
+    <label for="cours">Choix des cours :</label><br>
+    <select id="cours" name="cours" multiple size="5">
+      <option value="informatique">Informatique</option>
+      <option value="francais">Français</option>
+      <option value="mathematiques">Mathématiques</option>
+      <option value="anglais">Anglais</option>
+      <option value="autres">Autres</option>
+    </select><br><br>
+
+    <label for="prix">Prix de la formation :</label><br>
+    <input type="number" id="prix" name="prix" placeholder="CHF" required><br><br>
+
+    <button type="submit">Envoyer l'inscription</button>
+  </form>
+</section>
+  <section id="contact">
+    <h2>📞 Contactez-nous</h2>
+    <p>Adresse : Quartier Wanindara Secteur 3 Carréfour marché , Conakry</p>
+    <p>Email : ecolelevelup.wancity@gmail.com</p>
+    <p>Téléphone : +224 629 68 18 55 </p>
+  </section>
+
+  <footer>
+    &copy; 2025 École Horizon. Tous droits réservés.
+  </footer>
+
+</body>
+</html>
